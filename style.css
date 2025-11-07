@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: cairo;
+
+}
+body{
+    background-image: linear-gradient(to right, #ff00ff, #00ffff);
+    color: magenta;
+}
+/* The header */
+.header{
+    background-color: black;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.5s;
+}
+.logo:hover{
+    transform: scale(0.9);
+}
+.logo p{
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.logo img{
+    width: 80px;
+}
+.logo a{
+    text-decoration: none;
+}
+.header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.header ul li a{
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.header ul li a:hover{
+    color: #113e82;
+}
+
+/* ################################################# */
+
+.maincontent{
+    text-align: center;
+}
+.maincontent .welcomephrase{
+    font-size: 48px;
+    color: magenta;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+    margin-bottom: 250px;
+}
+.introvideo{
+    color: white;
+    font-size: 28px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.introvideo img{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: auto;
+    transition: transform 0.5s
+}
+.introvideo img:hover{
+    transform: scale(1.08);
+}
+
+.endofcontent
+{
+    text-align: center;
+    margin-bottom: 250px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.endofcontent h2 , .maincontent h2{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline;
+    padding: 0 30px;
+    font-weight: bold;
+    background-image:linear-gradient(to left, #ff00ff, #00ffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+.endofcontent p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.endofcontent ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.endofcontent ul li{
+    list-style: none;
+}
+.endofcontent ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.endofcontent ul li a:hover{
+    color: #113e82;
+    transform: scale(1.5);
+}
+
+
+
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+.firstfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}   
+.mohamedelkady ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.mohamedelkady ul li{
+    list-style: none;
+}
+.mohamedelkady ul li a img{
+    width: 28px;
+    height: auto;
+    transition: transform 0.5s;
+}
+.mohamedelkady ul li a img:hover{
+    transform: scale(1.5);
+}
+.developer img{
+    width: 28px;
+    height: auto;
+    transition: transform 0.5s;
+}
+.developer img:hover{
+    transform: scale(1.5);
+}
+
+.pagesontent{
+    text-align: center;
+    margin: 15% 0;
+}
+.pagesontent .welcomephrase{
+    font-size: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 250px;
+}
+.pagescontent h2{
+    color: black;
+    display: inline;
+    text-align: center;
+    padding: 0 30px;
+    font-weight: bold;
+    background-image:linear-gradient(to left, #ff00ff, #00ffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+iframe{
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    height: 450px;
+    transition: transform 0.5s
+}
+iframe:hover{
+    transform: scale(1.05);
+
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .introvideo {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .endofcontent ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}   
+
+
+/* ################################################# */
+/* @MEDIA QUERIES FOR MOBILE AND SMALL SCREENS (Max-width: 768px) */
+/* ################################################# */
+
+@media screen and (max-width: 768px) {
+    /* 1. تعديل الـ Header (شريط التنقل العلوي) */
+    .header {
+        /* تقليل المسافات الداخلية */
+        padding: 15px 20px;
+        /* تقليل الارتفاع */
+        height: auto;
+        /* تغيير اتجاه المحتوى ليصبح رأسيًا (لجعل القائمة تحت اللوجو) */
+        flex-direction: column; 
+        align-items: center;
+        border-radius: 0 0 20px 20px; /* تقليل استدارة الحواف */
+    }
+
+    /* تعديل اللوجو */
+    .logo {
+        margin-bottom: 15px; /* إضافة مسافة أسفل اللوجو لفصله عن القائمة */
+    }
+    .logo p {
+        font-size: 16px; /* تصغير حجم خط اللوجو */
+    }
+    .logo img {
+        width: 60px; /* تصغير حجم صورة اللوجو */
+    }
+
+    /* تعديل قائمة التنقل (الروابط) */
+    .header ul {
+        gap: 10px; /* تقليل المسافة بين الروابط */
+    }
+    .header ul li a {
+        font-size: 10px; /* تصغير حجم خط الروابط */
+        padding: 5px 10px;
+    }
+
+    /* 2. تعديل قسم الفيديو التعريفي (introvideo) */
+    .introvideo {
+        /* يجعل النص والفيديو يظهران تحت بعضهما */
+        flex-direction: column;
+        text-align: center;
+        /* إضافة مسافة بين النص والفيديو في الموبايل */
+        gap: 30px; 
+    }
+
+    .introvideo img {
+        width: 90%; /* جعل عرض الصورة (أو الفيديو) يتناسب مع عرض الشاشة */
+        max-width: 350px; /* تحديد أقصى عرض مناسب */
+        height: auto;
+    }
+
+    /* 3. تعديل قسم نهاية المحتوى (endofcontent) */
+    .endofcontent ul {
+        /* يجعل عناصر قائمة الروابط تحت بعضها */
+        flex-direction: column; 
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    /* 4. تعديل الـ Footer (التذييل) */
+    .firstfooter {
+        /* يجعل أقسام التذييل (حقوق الكابتن، حقوق المطور) تحت بعضها */
+        flex-direction: column;
+        gap: 30px; /* إضافة مسافة بين الأقسام */
+    }
+    
+    .mohamedelkady, .developer {
+        text-align: center;
+    }
+
+    /* 5. تعديل الفيديوهات داخل الصفحات الأخرى (iframe) */
+    iframe {
+        width: 90%; /* تصغير عرض الـ iframe ليتناسب مع شاشة الموبايل */
+        height: 250px; /* تقليل ارتفاع الـ iframe */
+    }
+
+    /* تعديلات عامة لحجم الخط */
+    .maincontent .welcomephrase, .pagesontent .welcomephrase {
+        font-size: 30px;
+        margin-top: 10%;
+        margin-bottom: 50px;
+    }
+    .introvideo {
+        font-size: 20px;
+    }
+}
