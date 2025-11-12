@@ -21,12 +21,12 @@
     padding: 0;
     box-sizing: border-box;
     /* scroll-behavior: smooth; */
-    font-family: ' Poppins', 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 
 }
 body{
-    background-image: linear-gradient(to right, #ff00ff, #00ffff);
-    color: magenta;
+    background-image: linear-gradient(to top, #ff00ff, #00ffff);
+    color: white;
 }
 /* The header */
 .header{
@@ -89,8 +89,11 @@ body{
 }
 .maincontent .welcomephrase{
     font-size: 48px;
-    color: rgb(255, 176, 255);
-    text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #ff00ff, #2c12c4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     margin-top: 15%;
     margin-bottom: 250px;
 }
@@ -371,5 +374,6 @@ iframe:hover{
         flex-direction: column;
         gap: 20px;
         padding: 0 50px;
+        font-size: small;
     }
 }
